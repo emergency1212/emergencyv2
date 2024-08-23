@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMERGENCY WARNING!!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0A0A23; /* Dark blue background */
+            color: #FFFFFF; /* White text color */
+            font-family: 'Courier New', Courier, monospace; /* Monospace font for hacker theme */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 100px; /* Adjust the size of the logo */
+            height: auto;
+        }
+
+        .header {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .content > div {
+            width: 100%;
+            padding: 20px;
+            background-color: #111133;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .content > div h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .content > div p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #CCCCCC;
+        }
+
+        .content > div video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #FFFFFF;
+        }
+
+        @media (min-width: 768px) {
+            .content > div {
+                width: 48%;
+            }
+
+            .header {
+                font-size: 3rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .content > div {
+                width: 30%;
+            }
+        }
+
+        .binary-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('binary-pattern.png'); /* Add your binary pattern image */
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="binary-background"></div>
+    <div class="container">
+        <div class="logo">
+            <img src="lg.png" alt="Logo">
+        </div>
+        <div class="header">
+            EMERGENCY WARNING!!
+        </div>
+        <div class="content">
+            <div>
+                <h2>PEOPLE'S VOICE</h2>
+                <p>We don’t give a sh*t about politics, but we do care about humanity for people of this Republic! Don’t let them ruin this country and rob your freedom.</p>
+            </div>
+            <div>
+                <video controls autoplay loop>
+                    <source src="vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+                <h2>PROFESSIONAL NARRATIVE</h2>
+                <p>The implementation does not comply with the guidelines (read: Keadilan sosial bagi seluruh rakyat Indonesia).</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
